@@ -1,6 +1,6 @@
 {
   "name": "postman-to-openapi",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Convert postman collection to OpenAPI spec",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
@@ -23,10 +23,6 @@
     "lib/*",
     "types/*"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joolfe/postman-to-openapi.git"
-  },
   "keywords": [
     "swagger",
     "OpenAPI",
@@ -35,15 +31,10 @@
     "convert",
     "converter",
     "transform",
-    "specification",
-    "yml"
+    "specification"
   ],
-  "author": "joolfe04@gmail.com",
+  "author": "luosm01@mingyuanyun.com",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/joolfe/postman-to-openapi/issues"
-  },
-  "homepage": "https://github.com/joolfe/postman-to-openapi#readme",
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
@@ -87,9 +78,11 @@
   },
   "dependencies": {
     "commander": "^8.3.0",
+    "generate-schema": "^2.6.0",
     "js-yaml": "^4.1.0",
     "marked": "^4.0.8",
-    "mustache": "^4.2.0"
+    "mustache": "^4.2.0",
+    "obj-flatten": "^2.0.6"
   },
   "husky": {
     "hooks": {

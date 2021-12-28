@@ -1,0 +1,124 @@
+openapi: 3.0.0
+info:
+  title: Variables
+  description: Mi super test collection from postman
+  version: 1.1.0
+servers:
+  - url: http://{{server}}
+  - url: https://api.io
+paths:
+  /users:
+    post:
+      tags:
+        - default
+      summary: Create new User
+      description: Create a new user into your amazing API
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                example: field
+                other:
+                  data1: 'yes'
+                  service: '{{service}}'
+              properties:
+                $schema: http://json-schema.org/draft-04/schema#
+                type: object
+                properties:
+                  example:
+                    type: string
+                  other:
+                    type: object
+                    properties:
+                      data1:
+                        type: string
+                      service:
+                        type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    get:
+      tags:
+        - default
+      summary: Get a list of user
+      description: Get a list of users
+      parameters:
+        - name: size
+          in: query
+          schema:
+            type: string
+          description: '{{desc-size}}'
+          example: '{{page-size}}'
+        - name: company
+          in: query
+          schema:
+            type: string
+          description: company for filter users
+          example: '{{company}}'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /{dinamic_path}/post:
+    post:
+      tags:
+        - default
+      summary: Create Post
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                company:
+                  type: string
+                  example: '{{company}}'
+                text:
+                  type: string
+                  example: This is an example text
+                auditor:
+                  type: string
+                  example: '{{auditor}}'
+      parameters:
+        - name: dinamic_path
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /users/{user_id}:
+    get:
+      tags:
+        - default
+      summary: Consult User data
+      description: Get one user instance data
+      parameters:
+        - name: X-Company
+          in: header
+          schema:
+            type: string
+          example: '{{company}}'
+        - name: company
+          in: query
+          schema:
+            type: string
+          example: '{{company}}'
+        - name: user_id
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}

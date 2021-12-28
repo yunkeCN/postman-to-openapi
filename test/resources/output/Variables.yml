@@ -22,6 +22,19 @@ paths:
                 other:
                   data1: 'yes'
                   service: s23434
+              properties:
+                $schema: http://json-schema.org/draft-04/schema#
+                type: object
+                properties:
+                  example:
+                    type: string
+                  other:
+                    type: object
+                    properties:
+                      data1:
+                        type: string
+                      service:
+                        type: string
       responses:
         '200':
           description: Successful response

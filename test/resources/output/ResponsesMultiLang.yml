@@ -22,6 +22,18 @@ paths:
                 createdAt: '2021-06-04T15:50:38.568Z'
                 name: Carol
                 avatar: https://cdn.fakercloud.com/avatars/nelsonjoyce_128.jpg
+              properties:
+                $schema: http://json-schema.org/draft-04/schema#
+                type: object
+                properties:
+                  id:
+                    type: string
+                  createdAt:
+                    type: string
+                  name:
+                    type: string
+                  avatar:
+                    type: string
       responses:
         '201':
           description: Created
@@ -73,12 +85,24 @@ paths:
           content:
             application/json:
               schema:
+                $schema: http://json-schema.org/draft-04/schema#
                 type: object
+                properties:
+                  id:
+                    type: string
+                  createdAt:
+                    type: string
+                  name:
+                    type: string
+                  avatar:
+                    type: string
               example:
-                id: '51'
-                createdAt: '2021-06-04T15:50:38.568Z'
-                name: Carol
-                avatar: https://cdn.fakercloud.com/avatars/nelsonjoyce_128.jpg
+                summary: Create new User example
+                value:
+                  id: '51'
+                  createdAt: '2021-06-04T15:50:38.568Z'
+                  name: Carol
+                  avatar: https://cdn.fakercloud.com/avatars/nelsonjoyce_128.jpg
             text/plain:
               schema:
                 type: string
@@ -152,12 +176,24 @@ paths:
           content:
             application/json:
               schema:
+                $schema: http://json-schema.org/draft-04/schema#
                 type: object
+                properties:
+                  id:
+                    type: string
+                  createdAt:
+                    type: string
+                  name:
+                    type: string
+                  avatar:
+                    type: string
               example:
-                id: '50'
-                createdAt: '2021-06-04T23:41:02.287Z'
-                name: Leanne
-                avatar: https://cdn.fakercloud.com/avatars/bartjo_128.jpg
+                summary: Get User data OK
+                value:
+                  id: '50'
+                  createdAt: '2021-06-04T23:41:02.287Z'
+                  name: Leanne
+                  avatar: https://cdn.fakercloud.com/avatars/bartjo_128.jpg
         '404':
           description: Not Found
           content:

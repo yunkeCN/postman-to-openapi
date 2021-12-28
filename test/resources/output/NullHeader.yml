@@ -25,6 +25,19 @@ paths:
                   compte: '{{compte}}'
                   motDePasse: '{{motDePasse}}'
                   identifiant: '{{identifiant}}'
+              properties:
+                $schema: http://json-schema.org/draft-04/schema#
+                type: object
+                properties:
+                  contenu:
+                    type: object
+                    properties:
+                      compte:
+                        type: string
+                      motDePasse:
+                        type: string
+                      identifiant:
+                        type: string
       parameters:
         - name: Content-Type
           in: header
@@ -42,9 +55,22 @@ paths:
           content:
             application/json:
               schema:
+                $schema: http://json-schema.org/draft-04/schema#
                 type: object
+                properties:
+                  erreur:
+                    type: 'null'
+                  codeErreur:
+                    type: number
+                  contenu:
+                    type: object
+                    properties:
+                      token:
+                        type: string
               example:
-                erreur: null
-                codeErreur: 0
-                contenu:
-                  token: ct54q7uoidffg2z661afigu98ix476s8
+                summary: Récupération token
+                value:
+                  erreur: null
+                  codeErreur: 0
+                  contenu:
+                    token: ct54q7uoidffg2z661afigu98ix476s8

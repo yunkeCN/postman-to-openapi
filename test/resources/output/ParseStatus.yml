@@ -22,6 +22,19 @@ paths:
                 other:
                   data1: 'yes'
                   data2: 'no'
+              properties:
+                $schema: http://json-schema.org/draft-04/schema#
+                type: object
+                properties:
+                  example:
+                    type: string
+                  other:
+                    type: object
+                    properties:
+                      data1:
+                        type: string
+                      data2:
+                        type: string
       responses:
         '201':
           description: Successful response
@@ -43,6 +56,19 @@ paths:
                 other:
                   data1: 'yes'
                   data2: 'no'
+              properties:
+                $schema: http://json-schema.org/draft-04/schema#
+                type: object
+                properties:
+                  example:
+                    type: string
+                  other:
+                    type: object
+                    properties:
+                      data1:
+                        type: string
+                      data2:
+                        type: string
       responses:
         '202':
           description: Successful response
@@ -64,6 +90,19 @@ paths:
                 other:
                   data1: 'yes'
                   data2: 'no'
+              properties:
+                $schema: http://json-schema.org/draft-04/schema#
+                type: object
+                properties:
+                  example:
+                    type: string
+                  other:
+                    type: object
+                    properties:
+                      data1:
+                        type: string
+                      data2:
+                        type: string
       responses:
         '200':
           description: Successful response

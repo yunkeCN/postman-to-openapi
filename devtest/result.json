@@ -1,0 +1,73 @@
+{
+  "openapi": "3.0.0",
+  "info": { "title": "IP地址查询", "version": "1.0.0" },
+  "servers": [{ "url": "http://ip-api.com" }],
+  "paths": {
+    "/json/115.95.175.147": {
+      "post": {
+        "tags": ["default"],
+        "summary": "ip地址查询",
+        "requestBody": { "content": { "application/json": { "schema": { "type": "object", "example": { "a": 3 } } } } },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "Connection": { "schema": { "type": "string", "example": "close" } },
+              "Content-Length": { "schema": { "type": "integer", "example": "289" } },
+              "Access-Control-Allow-Origin": { "schema": { "type": "string", "example": "*" } },
+              "Content-Type": { "schema": { "type": "string", "example": "application/json; charset=utf-8" } },
+              "Date": { "schema": { "type": "string", "example": "Mon, 27 Dec 2021 11:44:58 GMT" } },
+              "X-Rl": { "schema": { "type": "integer", "example": "44" } },
+              "X-Ttl": { "schema": { "type": "integer", "example": "60" } }
+            },
+            "content": {
+              "application/json": {
+                "schema": { "type": "object" },
+                "examples": {
+                  "example-0": {
+                    "summary": "ip地址查询1",
+                    "value": {
+                      "status": "success",
+                      "country": "China",
+                      "countryCode": "CN",
+                      "region": "SH",
+                      "regionName": "Shanghai",
+                      "city": "Shanghai",
+                      "zip": "",
+                      "lat": 31.0442,
+                      "lon": 121.4054,
+                      "timezone": "Asia/Shanghai",
+                      "isp": "China Telecom (Group)",
+                      "org": "Chinanet SH",
+                      "as": "AS4812 China Telecom (Group)",
+                      "query": "114.95.175.146"
+                    }
+                  },
+                  "example-1": {
+                    "summary": "ip地址查询2",
+                    "value": {
+                      "status": "success",
+                      "country": "South Korea",
+                      "countryCode": "KR",
+                      "region": "11",
+                      "regionName": "Seoul",
+                      "city": "Yongsan-dong",
+                      "zip": "04371",
+                      "lat": 37.536,
+                      "lon": 126.971,
+                      "timezone": "Asia/Seoul",
+                      "isp": "LG DACOM Corporation",
+                      "org": "Boranet",
+                      "as": "AS3786 LG DACOM Corporation",
+                      "query": "115.95.175.147"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

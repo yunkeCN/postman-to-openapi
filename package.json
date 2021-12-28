@@ -11,9 +11,7 @@
     "test:unit": "mocha",
     "test:unit-no-only": "npm run test:unit -- --forbid-only",
     "test": "nyc npm run test:unit-no-only",
-    "prepare": "husky install",
-    "init:case": "node scripts/gen-case.js",
-    "init:test": "yarn run init:case && yarn test"
+    "prepare": "husky install"
   },
   "files": [
     "bin/*",

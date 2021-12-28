@@ -35,6 +35,10 @@ Use the scripts in `package.json`:
 
 `Nodejs` `Javascript` `OpenAPI` `Postman` `Newman` `Collection` `Transform` `Convert`
 
+## Reconstruct test cases & do test
+
+node scripts/gen-case.js && yarn test
+
 ## License
 
 See the [LICENSE](LICENSE.txt) file.

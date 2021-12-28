@@ -4,7 +4,10 @@ info:
   description: Just a simple collection for test
   version: 2.3.0
 servers:
-  - url: http://{{base_url}}
+  - url: https://awesome.api.sandbox.io
+    description: Sandbox environment server
+  - url: https://awesome.api.io
+    description: Production env
 paths:
   /users:
     post:

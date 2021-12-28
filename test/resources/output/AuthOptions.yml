@@ -7,14 +7,18 @@ servers:
   - url: https://api.io
 components:
   securitySchemes:
-    basicAuth:
-      type: http
-      scheme: basic
-    bearerAuth:
+    myCustomAuth:
       type: http
       scheme: bearer
+      bearerFormat: A resource owner JWT
+      description: My awesome authentication using bearer
+    myCustomAuth2:
+      type: http
+      scheme: basic
+      description: My awesome authentication using user and password
 security:
-  - bearerAuth: []
+  - myCustomAuth: []
+  - myCustomAuth2: []
 paths:
   /users:
     post:
@@ -55,8 +59,6 @@ paths:
         - default
       summary: Get list of users
       description: Obtain a list of users that fullfill the conditions of the filters
-      security:
-        - basicAuth: []
       parameters:
         - name: age
           in: query

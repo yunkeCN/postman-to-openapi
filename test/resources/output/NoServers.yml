@@ -3,10 +3,6 @@ info:
   title: MultipleServers
   description: Collection to test multiples server parsing.
   version: 1.1.0
-servers:
-  - url: https://api.io
-  - url: https://api.dev.io
-  - url: https://api.pre.io
 paths:
   /users:
     post:

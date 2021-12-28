@@ -4,7 +4,6 @@ info:
   description: Mi super test collection from postman
   version: 1.1.0
 servers:
-  - url: http://{{server}}
   - url: https://api.io
 paths:
   /users:
@@ -22,7 +21,7 @@ paths:
                 example: field
                 other:
                   data1: 'yes'
-                  service: '{{service}}'
+                  service: s23434
               properties:
                 $schema: http://json-schema.org/draft-04/schema#
                 type: object
@@ -50,21 +49,21 @@ paths:
         - name: size
           in: query
           schema:
-            type: string
-          description: '{{desc-size}}'
-          example: '{{page-size}}'
+            type: integer
+          description: size of the list
+          example: '10'
         - name: company
           in: query
           schema:
             type: string
           description: company for filter users
-          example: '{{company}}'
+          example: ServicesLTD
       responses:
         '200':
           description: Successful response
           content:
             application/json: {}
-  /{dinamic_path}/post:
+  /test/path/here/post:
     post:
       tags:
         - default
@@ -77,19 +76,13 @@ paths:
               properties:
                 company:
                   type: string
-                  example: '{{company}}'
+                  example: ServicesLTD
                 text:
                   type: string
                   example: This is an example text
                 auditor:
                   type: string
-                  example: '{{auditor}}'
-      parameters:
-        - name: dinamic_path
-          in: path
-          schema:
-            type: string
-          required: true
+                  example: IHA
       responses:
         '200':
           description: Successful response
@@ -106,12 +99,12 @@ paths:
           in: header
           schema:
             type: string
-          example: '{{company}}'
+          example: ServicesLTD
         - name: company
           in: query
           schema:
             type: string
-          example: '{{company}}'
+          example: ServicesLTD
         - name: user_id
           in: path
           schema:

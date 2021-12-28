@@ -4,9 +4,9 @@ info:
   description: Just a simple collection for test
   version: 2.3.0
   x-logo:
-    url: https://github.com/joolfe/mylogo.png
-    backgroundColor: '#000FFF'
-    altText: Othert text for logo
+    url: https://github.com/joolfe/logoBanner.png
+    backgroundColor: '#FFFFFF'
+    altText: Example logo
     href: https://github.com/joolfe/here.html
 servers:
   - url: https://api.io

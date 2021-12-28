@@ -1,8 +1,9 @@
 openapi: 3.0.0
 info:
-  title: Simple Post
-  description: Just a simple collection for test
-  version: 2.3.0
+  title: Options title
+  description: Description from options
+  version: 6.0.7-beta
+  termsOfService: http://tos.myweb.com
 servers:
   - url: https://api.io
 paths:

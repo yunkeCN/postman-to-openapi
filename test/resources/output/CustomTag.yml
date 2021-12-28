@@ -9,7 +9,7 @@ paths:
   /users:
     post:
       tags:
-        - default
+        - Custom Tag
       summary: Create new User
       description: Create a new user into your amazing API
       requestBody:
@@ -43,7 +43,7 @@ paths:
   /raw:
     post:
       tags:
-        - default
+        - Custom Tag
       summary: Post empty raw
       description: Create a new user into your amazing API
       requestBody:

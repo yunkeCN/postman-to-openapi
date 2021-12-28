@@ -3,7 +3,7 @@
 const { describe, it, afterEach } = require("mocha")
 const { postmanToOpenApi } = require("./transformer")
 const path = require("path")
-const { equal, ok } = require("assert").strict
+const { equal } = require("assert").strict
 const { readFileSync, existsSync, unlinkSync } = require("fs")
 const { version } = require("../package.json")
 
@@ -121,7 +121,6 @@ describe("Library specs", function () {
       it("should work with a basic transform", async function () {
         const result = await postmanToOpenApi(COLLECTION_BASIC, OUTPUT_PATH, {})
         equal(result, EXPECTED_BASIC)
-        ok(existsSync(OUTPUT_PATH))
       })
 
       it("should work when no save", async function () {

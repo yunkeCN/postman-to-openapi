@@ -6,7 +6,7 @@ info:
 servers:
   - url: https://60bb37ab42e1d000176206c3.mockapi.io
 paths:
-  /api/v1/users:
+  /users:
     post:
       tags:
         - default
@@ -111,7 +111,7 @@ paths:
                     createdAt: '2021-06-04T15:50:38.568Z'
                     name: Carol
                     avatar: https://cdn.fakercloud.com/avatars/nelsonjoyce_128.jpg
-  /api/v1/users/{user_id}:
+  /users/{user_id}:
     get:
       tags:
         - default

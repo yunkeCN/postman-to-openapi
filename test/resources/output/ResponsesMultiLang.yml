@@ -6,7 +6,7 @@ info:
 servers:
   - url: https://60bb37ab42e1d000176206c3.mockapi.io
 paths:
-  /api/v1/users:
+  /users:
     post:
       tags:
         - default
@@ -107,7 +107,7 @@ paths:
               schema:
                 type: string
               example: '"Success"'
-  /api/v1/users/{user_id}:
+  /users/{user_id}:
     get:
       tags:
         - default

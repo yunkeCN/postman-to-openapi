@@ -6,7 +6,7 @@ info:
 servers:
   - url: https://api.io
 paths:
-  /dev/users/{user_id}:
+  /users/{user_id}:
     get:
       tags:
         - default
@@ -23,7 +23,7 @@ paths:
           description: Successful response
           content:
             application/json: {}
-  /dev/user/{user_id}/desc/:
+  /user/{user_id}/desc/:
     get:
       tags:
         - default
@@ -42,7 +42,7 @@ paths:
           description: Successful response
           content:
             application/json: {}
-  /dev/user/{user_id}/desc/{desc_id}:
+  /user/{user_id}/desc/{desc_id}:
     get:
       tags:
         - default

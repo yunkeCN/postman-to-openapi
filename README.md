@@ -35,6 +35,13 @@ Use the scripts in `package.json`:
 
 `Nodejs` `Javascript` `OpenAPI` `Postman` `Newman` `Collection` `Transform` `Convert`
 
+## What I've done is
+
+- Adjust API
+- Use the examples for building the schemas using: https://github.com/Nijikokun/generate-schema
+- `fs` removed for browser
+- Unsupported Console
+
 ## Reconstruct test cases & do test
 
 node scripts/gen-case.js && yarn test

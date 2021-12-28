@@ -7,7 +7,21 @@
       "post": {
         "tags": ["default"],
         "summary": "ip地址查询",
-        "requestBody": { "content": { "application/json": { "schema": { "type": "object", "example": { "a": 3 } } } } },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": { "a": 3 },
+                "properties": {
+                  "$schema": "http://json-schema.org/draft-04/schema#",
+                  "type": "object",
+                  "properties": { "a": { "type": "number" } }
+                }
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK",
@@ -22,7 +36,30 @@
             },
             "content": {
               "application/json": {
-                "schema": { "type": "object" },
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$schema": "http://json-schema.org/draft-04/schema#",
+                      "type": "object",
+                      "properties": {
+                        "status": { "type": "string" },
+                        "country": { "type": "string" },
+                        "countryCode": { "type": "string" },
+                        "region": { "type": "string" },
+                        "regionName": { "type": "string" },
+                        "city": { "type": "string" },
+                        "zip": { "type": "string" },
+                        "lat": { "type": "number" },
+                        "lon": { "type": "number" },
+                        "timezone": { "type": "string" },
+                        "isp": { "type": "string" },
+                        "org": { "type": "string" },
+                        "as": { "type": "string" },
+                        "query": { "type": "string" }
+                      }
+                    }
+                  ]
+                },
                 "examples": {
                   "example-0": {
                     "summary": "ip地址查询1",

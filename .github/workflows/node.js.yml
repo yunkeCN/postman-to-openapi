@@ -5,14 +5,18 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x, 17.x]
     steps:
       - uses: actions/checkout@v2
-      # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
         with:
-          node-version: "16.x"
-          registry-url: "https://registry.npmjs.org"
-      - run: npm ci
+          node-version: ${{ matrix.node-version }}
+      - run: npm run lint
+      - run: npm run lint:ts
+      - run: npm test
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -1,6 +1,6 @@
 {
   "name": "@yued/postman-to-openapi",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Convert postman collection to OpenAPI spec",
   "main": "lib/index.js",
   "types": "types/index.d.ts",

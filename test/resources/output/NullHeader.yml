@@ -20,24 +20,21 @@ paths:
           application/json:
             schema:
               type: object
-              example:
-                contenu:
-                  compte: '{{compte}}'
-                  motDePasse: '{{motDePasse}}'
-                  identifiant: '{{identifiant}}'
               properties:
-                $schema: http://json-schema.org/draft-04/schema#
-                type: object
-                properties:
-                  contenu:
-                    type: object
-                    properties:
-                      compte:
-                        type: string
-                      motDePasse:
-                        type: string
-                      identifiant:
-                        type: string
+                contenu:
+                  type: object
+                  properties:
+                    compte:
+                      type: string
+                    motDePasse:
+                      type: string
+                    identifiant:
+                      type: string
+            example:
+              contenu:
+                compte: '{{compte}}'
+                motDePasse: '{{motDePasse}}'
+                identifiant: '{{identifiant}}'
       parameters:
         - name: Content-Type
           in: header
@@ -55,7 +52,6 @@ paths:
           content:
             application/json:
               schema:
-                $schema: http://json-schema.org/draft-04/schema#
                 type: object
                 properties:
                   erreur:

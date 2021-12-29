@@ -17,23 +17,20 @@ paths:
           application/json:
             schema:
               type: object
-              example:
-                id: '100'
-                createdAt: '2021-06-04T15:50:38.568Z'
-                name: Carol
-                avatar: https://cdn.fakercloud.com/avatars/nelsonjoyce_128.jpg
               properties:
-                $schema: http://json-schema.org/draft-04/schema#
-                type: object
-                properties:
-                  id:
-                    type: string
-                  createdAt:
-                    type: string
-                  name:
-                    type: string
-                  avatar:
-                    type: string
+                id:
+                  type: string
+                createdAt:
+                  type: string
+                name:
+                  type: string
+                avatar:
+                  type: string
+            example:
+              id: '100'
+              createdAt: '2021-06-04T15:50:38.568Z'
+              name: Carol
+              avatar: https://cdn.fakercloud.com/avatars/nelsonjoyce_128.jpg
       responses:
         '201':
           description: Created
@@ -41,51 +38,50 @@ paths:
             Server:
               schema:
                 type: string
-                example: Cowboy
+              example: Cowboy
             Connection:
               schema:
                 type: string
-                example: keep-alive
+              example: keep-alive
             X-Powered-By:
               schema:
                 type: string
-                example: Express
+              example: Express
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+              example: '*'
             Access-Control-Allow-Methods:
               schema:
                 type: string
-                example: GET,PUT,POST,DELETE,OPTIONS
+              example: GET,PUT,POST,DELETE,OPTIONS
             Access-Control-Allow-Headers:
               schema:
                 type: string
-                example: X-Requested-With,Content-Type,Cache-Control,access_token
+              example: X-Requested-With,Content-Type,Cache-Control,access_token
             Content-Type:
               schema:
                 type: string
-                example: application/json
+              example: application/json
             Content-Length:
               schema:
                 type: integer
-                example: '131'
+              example: '131'
             Vary:
               schema:
                 type: string
-                example: Accept-Encoding
+              example: Accept-Encoding
             Date:
               schema:
                 type: string
-                example: Sat, 05 Jun 2021 08:42:32 GMT
+              example: Sat, 05 Jun 2021 08:42:32 GMT
             Via:
               schema:
                 type: number
-                example: 1.1 vegur
+              example: 1.1 vegur
           content:
             application/json:
               schema:
-                $schema: http://json-schema.org/draft-04/schema#
                 type: object
                 properties:
                   id:
@@ -132,55 +128,54 @@ paths:
             Server:
               schema:
                 type: string
-                example: Cowboy
+              example: Cowboy
             Connection:
               schema:
                 type: string
-                example: keep-alive
+              example: keep-alive
             X-Powered-By:
               schema:
                 type: string
-                example: Express
+              example: Express
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+              example: '*'
             Access-Control-Allow-Methods:
               schema:
                 type: string
-                example: GET,PUT,POST,DELETE,OPTIONS
+              example: GET,PUT,POST,DELETE,OPTIONS
             Access-Control-Allow-Headers:
               schema:
                 type: string
-                example: X-Requested-With,Content-Type,Cache-Control,access_token
+              example: X-Requested-With,Content-Type,Cache-Control,access_token
             Content-Type:
               schema:
                 type: string
-                example: application/json
+              example: application/json
             Content-Length:
               schema:
                 type: integer
-                example: '127'
+              example: '127'
             Etag:
               schema:
                 type: string
-                example: '"1711725458"'
+              example: '"1711725458"'
             Vary:
               schema:
                 type: string
-                example: Accept-Encoding
+              example: Accept-Encoding
             Date:
               schema:
                 type: string
-                example: Sat, 05 Jun 2021 08:48:00 GMT
+              example: Sat, 05 Jun 2021 08:48:00 GMT
             Via:
               schema:
                 type: number
-                example: 1.1 vegur
+              example: 1.1 vegur
           content:
             application/json:
               schema:
-                $schema: http://json-schema.org/draft-04/schema#
                 type: object
                 properties:
                   id:
@@ -204,51 +199,51 @@ paths:
             Server:
               schema:
                 type: string
-                example: Cowboy
+              example: Cowboy
             Connection:
               schema:
                 type: string
-                example: keep-alive
+              example: keep-alive
             X-Powered-By:
               schema:
                 type: string
-                example: Express
+              example: Express
             Access-Control-Allow-Origin:
               schema:
                 type: string
-                example: '*'
+              example: '*'
             Access-Control-Allow-Methods:
               schema:
                 type: string
-                example: GET,PUT,POST,DELETE,OPTIONS
+              example: GET,PUT,POST,DELETE,OPTIONS
             Access-Control-Allow-Headers:
               schema:
                 type: string
-                example: X-Requested-With,Content-Type,Cache-Control,access_token
+              example: X-Requested-With,Content-Type,Cache-Control,access_token
             Content-Type:
               schema:
                 type: string
-                example: application/json
+              example: application/json
             Content-Length:
               schema:
                 type: integer
-                example: '11'
+              example: '11'
             Etag:
               schema:
                 type: string
-                example: '"1592724850"'
+              example: '"1592724850"'
             Vary:
               schema:
                 type: string
-                example: Accept-Encoding
+              example: Accept-Encoding
             Date:
               schema:
                 type: string
-                example: Sat, 05 Jun 2021 08:48:30 GMT
+              example: Sat, 05 Jun 2021 08:48:30 GMT
             Via:
               schema:
                 type: number
-                example: 1.1 vegur
+              example: 1.1 vegur
           content:
             text/plain:
               schema:

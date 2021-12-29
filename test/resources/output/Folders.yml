@@ -48,24 +48,21 @@ paths:
           application/json:
             schema:
               type: object
-              example:
-                example: field
-                other:
-                  data1: 'yes'
-                  data2: 'no'
               properties:
-                $schema: http://json-schema.org/draft-04/schema#
-                type: object
-                properties:
-                  example:
-                    type: string
-                  other:
-                    type: object
-                    properties:
-                      data1:
-                        type: string
-                      data2:
-                        type: string
+                example:
+                  type: string
+                other:
+                  type: object
+                  properties:
+                    data1:
+                      type: string
+                    data2:
+                      type: string
+            example:
+              example: field
+              other:
+                data1: 'yes'
+                data2: 'no'
       responses:
         '200':
           description: Successful response
@@ -82,24 +79,21 @@ paths:
           application/json:
             schema:
               type: object
-              example:
-                example: field
-                other:
-                  data1: 'yes'
-                  data2: 'no'
               properties:
-                $schema: http://json-schema.org/draft-04/schema#
-                type: object
-                properties:
-                  example:
-                    type: string
-                  other:
-                    type: object
-                    properties:
-                      data1:
-                        type: string
-                      data2:
-                        type: string
+                example:
+                  type: string
+                other:
+                  type: object
+                  properties:
+                    data1:
+                      type: string
+                    data2:
+                      type: string
+            example:
+              example: field
+              other:
+                data1: 'yes'
+                data2: 'no'
       responses:
         '200':
           description: Successful response
@@ -140,24 +134,21 @@ paths:
           application/json:
             schema:
               type: object
-              example:
-                example: field
-                other:
-                  data1: 'yes'
-                  data2: 'no'
               properties:
-                $schema: http://json-schema.org/draft-04/schema#
-                type: object
-                properties:
-                  example:
-                    type: string
-                  other:
-                    type: object
-                    properties:
-                      data1:
-                        type: string
-                      data2:
-                        type: string
+                example:
+                  type: string
+                other:
+                  type: object
+                  properties:
+                    data1:
+                      type: string
+                    data2:
+                      type: string
+            example:
+              example: field
+              other:
+                data1: 'yes'
+                data2: 'no'
       responses:
         '200':
           description: Successful response
@@ -174,24 +165,21 @@ paths:
           application/json:
             schema:
               type: object
-              example:
-                example: field
-                other:
-                  data1: 'yes'
-                  data2: 'no'
               properties:
-                $schema: http://json-schema.org/draft-04/schema#
-                type: object
-                properties:
-                  example:
-                    type: string
-                  other:
-                    type: object
-                    properties:
-                      data1:
-                        type: string
-                      data2:
-                        type: string
+                example:
+                  type: string
+                other:
+                  type: object
+                  properties:
+                    data1:
+                      type: string
+                    data2:
+                      type: string
+            example:
+              example: field
+              other:
+                data1: 'yes'
+                data2: 'no'
       responses:
         '200':
           description: Successful response
@@ -208,24 +196,21 @@ paths:
           application/json:
             schema:
               type: object
-              example:
-                example: field
-                other:
-                  data1: 'yes'
-                  data2: 'no'
               properties:
-                $schema: http://json-schema.org/draft-04/schema#
-                type: object
-                properties:
-                  example:
-                    type: string
-                  other:
-                    type: object
-                    properties:
-                      data1:
-                        type: string
-                      data2:
-                        type: string
+                example:
+                  type: string
+                other:
+                  type: object
+                  properties:
+                    data1:
+                      type: string
+                    data2:
+                      type: string
+            example:
+              example: field
+              other:
+                data1: 'yes'
+                data2: 'no'
       responses:
         '200':
           description: Successful response
@@ -242,24 +227,21 @@ paths:
           application/json:
             schema:
               type: object
-              example:
-                example: field
-                other:
-                  data1: 'yes'
-                  data2: 'no'
               properties:
-                $schema: http://json-schema.org/draft-04/schema#
-                type: object
-                properties:
-                  example:
-                    type: string
-                  other:
-                    type: object
-                    properties:
-                      data1:
-                        type: string
-                      data2:
-                        type: string
+                example:
+                  type: string
+                other:
+                  type: object
+                  properties:
+                    data1:
+                      type: string
+                    data2:
+                      type: string
+            example:
+              example: field
+              other:
+                data1: 'yes'
+                data2: 'no'
       responses:
         '200':
           description: Successful response
@@ -275,14 +257,11 @@ paths:
           application/json:
             schema:
               type: object
-              example:
-                test: here
               properties:
-                $schema: http://json-schema.org/draft-04/schema#
-                type: object
-                properties:
-                  test:
-                    type: string
+                test:
+                  type: string
+            example:
+              test: here
       responses:
         '200':
           description: Successful response

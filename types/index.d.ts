@@ -82,7 +82,9 @@ export interface Options {
     responseHeaders?: boolean,
     // Default value false
     replaceVars?: boolean,
+    // Default value yml
+    outputType?: "yml" | "json"
     additionalVars?: { [key: string]: string }
 }
 
-export default function postmanToOpenApi (input: string, output?: string, options?: Options) : string
+export default function postmanToOpenApi (input: string,  options?: Options) : string | Record<string, unknown>

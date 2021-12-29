@@ -15,10 +15,8 @@ paths:
       requestBody:
         content:
           application/json:
-            schema:
-              type: object
-              example: testesttestest
-              properties: {}
+            schema: {}
+            example: testesttestest
       responses:
         '200':
           description: Successful response
